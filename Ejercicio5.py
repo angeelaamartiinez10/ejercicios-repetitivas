@@ -3,18 +3,15 @@ en caso contrario, el programa termina cuando se introduce un espacio.
 '''
 
 
-caracter=""
+caracter=str
 
-caracter=(input("Dime una letra"))
-contadorV=0
-contadorN=0
-
-while caracter!="":
-    if caracter.lower() in "aeiou":
-        contadorV+=1
+while caracter!=" ":
+    caracter=(input("Dime una letra "))
+    if caracter=="a"or caracter=="e" or caracter=="i" or caracter=="o" or caracter=="u":
+        print("vocal")
     else:
-        contadorN+=1
-    caracter=(input("Dime una letra"))
+        print("no vocal")
+    
 
 
-print("Hay",contadorV, "vocales y",contadorN, "que no son vocales")
+
