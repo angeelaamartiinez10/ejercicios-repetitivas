@@ -9,9 +9,13 @@ sxh=0
 semanal=0
 pago=0
 
-horas=(int)(input("¿Cuántas horas se han trabajado esta semana?"))
-trabajadores=(int)(input("¿Cuántos trabajadores tiene la empresa?"))
-sxh=(int)(input("¿Cúanto es tu sueldo por hora?"))
+horas=(int)(input("¿Cuántas horas trabaja cada dia? "))
+trabajadores=(int)(input("¿Cuántos trabajadores tiene la empresa? "))
+sxh=(int)(input("¿Cúanto es tu sueldo por hora? "))
 
 
 for i in range(0,5): #trabaja 5 dias a la semana
+    semanal=semanal+(sxh*horas)
+pago=trabajadores*semanal
+print("El sueldo semanal que recibe un trabajador es:" ,semanal)
+print("La empresa paga trabajador",pago, "por los", trabajadores, " trabajadores que hay en la empresa")

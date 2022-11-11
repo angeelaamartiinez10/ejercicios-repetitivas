@@ -3,10 +3,10 @@ en caso contrario, el programa termina cuando se introduce un espacio.
 '''
 
 
-caracter=""
+caracter=str
 
 while caracter!=" ":
-    caracter=(input("Dime una letra ")).lower()
+    caracter=(input("Dime una letra "))
     if caracter=="a"or caracter=="e" or caracter=="i" or caracter=="o" or caracter=="u":
         print("vocal")
     else:
