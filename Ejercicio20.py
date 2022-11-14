@@ -6,12 +6,21 @@ num=0
 divisible=0
 
 primo=(int)(num**(1/2))
-primos=(int)(input("¿cuantos números primos quiere mostrar?"))
+contador=(int)(input("¿cuantos números primos quiere mostrar? "))
 
 vPrimos=[]
 
-for i in range (2, num):
+while contador!=0:
+    for i in range (1, primo+1):
+        if (num%i==0):
+            divisible+=1
+    contador-=1
+    vPrimos=divisible
 
-    if (i%divisible==0):
 
-print(vPrimos)
+
+
+
+
+
+print("los numeros primos son: ",vPrimos)
