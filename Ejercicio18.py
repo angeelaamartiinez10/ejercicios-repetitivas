@@ -1,9 +1,14 @@
 '''Hacer un programa que muestre un cronometro, indicando las horas, minutos y
 segundos.
 '''
+import time
 
-for horas in range(0,24):
-    for minutos in range(0,60):
-        for segundos in range(0,60):
-
+for horas in range(24):
+    for minutos in range(60):
+        for segundos in range(60):
             print(horas,minutos,segundos)
+            for i in range(7):
+                print()
+            time.sleep(1)
+            
+
